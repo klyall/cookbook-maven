@@ -1,8 +1,8 @@
 Description
 ===========
 
-Install and configure maven2 and maven3 from the binaries provided by
-the maven project
+Install and configure maven from the binaries provided by
+the maven project or from a locally hosted binary.
 
 Provides the `maven` LWRP for pulling a maven artifact from a maven
 repository and placing it in an arbitrary location.
@@ -24,16 +24,11 @@ The following Opscode cookbooks are dependencies:
 Attributes
 ==========
 
-* default['maven']['version']  defaults to 2
+* default['maven']['version']  defaults to 3.0.4
 * default['maven']['m2_home']  defaults to  '/usr/local/maven/'
-* default['maven']['m2_download_url']  the download url for maven2
-* default['maven']['m2_checksum']  the checksum, which you will have
+* default['maven']['url']  the download url for maven artifact
+* default['maven']['checksum']  the checksum, which you will have to recalculate if you change the download url
  to recalculate if you change the download url
-* default['maven']['m3_download_url'] download url for maven3
-* default['maven']['m3_checksum'] the checksum, which you will have
- to recalculate if you change the download url
-* default['maven']['setup_bin'] Whether or not to put mvn on your
- system path, defaults to false
 
 
 Usage
