@@ -29,4 +29,3 @@ default['maven']['m2_home'] = "#{node['ark']['prefix_root']}/maven"
 default['maven']['plugin_version'] = "2.4"
 
 default['maven']['repositories'] = ["http://repo1.maven.apache.org/maven2"]
-default['maven']['setup_bin'] = false
