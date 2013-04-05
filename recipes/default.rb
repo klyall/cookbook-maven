@@ -23,7 +23,7 @@
 include_recipe "java"
 include_recipe "ark"
 
-ark "mvn" do
+ark "maven" do
   url node['maven']['url']
   checksum node['maven']['checksum']
   home_dir node['maven']['m2_home']
